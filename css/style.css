@@ -4,6 +4,10 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(34, 65, 94);
     min-height: 100vh;
     margin: 0; padding: 0;
     display: flex;
@@ -13,23 +17,40 @@ body {
 a {
 text-decoration: none;
 font-size: 16px;
-color: rgb(117, 169, 238);
+color: rgb(255, 215, 235);
 }
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+
 
 * {
     box-sizing: border-box;
   }
 
 .main-header {
-    border: 1px solid red;
+  background-color: rgb(102, 103, 171);  
+    
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  width: 50%;
 }
 
 .main-main {
-    border: 1px solid red;
+    background-color: rgb(255, 255, 255);
 }
 
 .main-footer {
-    border: 1px solid red;
+    background-color: rgb(102, 103, 171);
 }
 
 .container {
@@ -50,3 +71,74 @@ color: rgb(117, 169, 238);
     transition: .3s;
   }
 
+  .section a {
+    color: #003cff;
+    text-decoration: none;  
+    transition: color 0.5s;
+  }
+  .section a:hover {
+    color: #ea00ff;
+  }
+
+  .section-title {
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #9900ff;
+  }
+
+  .link {
+    text-decoration: none;
+    color: #829985;
+    transition: color 0.5s;
+  }
+  
+  .link:hover {
+    color: #5d7260;
+  }
+
+  .section-item {
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .section-item::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 10px;
+    height: 10px; 
+    border: 1px solid #7b9aff;
+    border-radius: 50%;
+  }
+  
+  .github-nav-link  {
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+
+
+}
+
+  .rssschool {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 0 auto;
+    color: #fff;
+  }
+  .w3c {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0;
+    color: #fff;
+  }
+  .ava {
+
+    border-radius: 200px; 
+    border: 2px solid rgb(102, 103, 171); 
+    box-shadow: 0 0 7px rgb(102, 103, 171); 
+  }

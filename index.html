@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROM CV</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     
@@ -20,10 +20,10 @@
 <header class="main-header">
     <div class="container">
         
-        <section id="a">
+        <h2><section id="a">
         <nav class="nav">
             <ul class="nav-list">
-              <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
               <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
               <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
               <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
@@ -33,7 +33,7 @@
               <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
             </ul>
           </nav>
-        </section>
+        </section></h2>
 
 
 
@@ -43,39 +43,71 @@
 </header>
 
 
-<main class="main-main">
+<main class="main-main main-container">
     <div class="container">
 
         <section class="section" id="profile">
             <h1 class="section title">Raman Masko</h1>
+
+            <img src="./assets/img/me.jpg" alt="Me" class="ava" width="300">
+
         </section>
 
         <section class="section" id="contacts">
-            <h2 class="section-title">Contacts</h2>            
+            <h2 class="section-title">Contacts</h2> 
+            
+            <p>email: <a href="mailto:iamromma@gmail.com" title="email">iamromma@gmail.com</a></p>
+            <p>discord: <a href="https://discordapp.com/users/ROM#0429/" title="discord">ROM#0429</a></p>
+            <p>telegram: <a href="https://t.me/romanmosko" title="telegram">@romanmosko</a></p>
+
+
+
         </section>
         
         <section class="section" id="summary">
             <h2 class="section-title">Summary</h2>
+
+            <p>Hi, my name is Roman.
+                I live in Brest, Belarus.
+                After high school with a French bias, I studied economics at the university. My specialty is an economist-manager. For about 13 years I have been working as a lead specialist in international transportation. Now I'm interested in learning "the art of frontend". I know it will be difficult, but I'm not afraid. Along with the study of JS, HTML, CSS, I will raise my level of English.</p>
+
+
+
+
+
         </section>
 
         <section class="section" id="skills">
             <h2 class="section-title">Skills</h2>
+            <p>HTML5 (Basic), CSS3 (Basic)</p> 
         </section>
 
         <section class="section" id="code">
             <h2 class="section-title">Code</h2>
+            <code>
+                .rssschool {<br><br>
+                display: flex;<br>
+                justify-content: space-between;<br>
+                align-items: center;<br>
+                margin: 0 auto;<br>
+                color: #fff;<br><br>
+              }
+            </code>
         </section>
 
         <section class="section" id="courses">
             <h2 class="section-title">Courses</h2>
+            <a href="https://rs.school/js-stage0/" title="RSShool Page"><p>RSSchool Q2 2022 Pre-School (on air)</p></a>
         </section>
 
         <section class="section" id="projects">
             <h2 class="section-title">Projects</h2>
+            <a href="https://romanmosko.github.io/rsschool-cv/cv" title="GitHub"><p>RSSChool Markdown CV</p></a>
         </section>
 
         <section class="section" id="languages">
             <h2 class="section-title">Languages</h2>
+            <p>English B1, French B2</p>
         </section>
 
 
@@ -91,9 +123,18 @@
 
     <div class="container">
 
+       <span class="github-nav-link">© 2022 &nbsp;<a href="https://github.com/romanmosko">romanmosko</a></span>
+       <a href="https://rs.school/js/" class="rssschool"><img src="https://rs.school/images/rs_school_js.svg" alt="RSSchool" width="110"></a>
 
 
-    
+
+       <p class="w3c">
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="//jigsaw.w3.org/css-validator/images/vcss"
+                alt="Правильный CSS!" />
+        </a>
+    </p>
     </div>
 
 
