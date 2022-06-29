@@ -107,21 +107,6 @@ color: rgb(255, 215, 235);
     color: #5d7260;
   }
 
-  .section-item {
-    position: relative;
-    padding-left: 30px;
-  }
-  
-  .section-item::before {
-    content: "";
-    position: absolute;
-    top: 8px;
-    left: 0px;
-    width: 10px;
-    height: 10px; 
-    border: 1px solid #7b9aff;
-    border-radius: 50%;
-  }
   
   .w3c {
     display: flex;  
